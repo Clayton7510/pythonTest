@@ -1,5 +1,5 @@
 lang:
-  python: 3.9 #the global lang and version
+  python: 3.10 #the global lang and version
 events: #if omitted then every event fires the build
   git_branch: any
 # ops are unordered logical groupings of functionality that can (eventually) be run locally or remotely
@@ -8,7 +8,12 @@ ops: #if omitted than a default build is executed based on language
     - python:
         path: ''
         script: |
-          python3 --version
+          echo "python version: $(python3 --version)"
+          echo "pip version: $(pip --version)"
+    - python3:
+        path: ''
+        script: |
+          echo "python3.9 version: $(python3.9 --version)"
 stages:
   - test:
       ops:
