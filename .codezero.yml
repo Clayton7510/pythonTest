@@ -1,5 +1,5 @@
 lang:
-  python: 3.10 #the global lang and version
+  python: 3.8 #the global lang and version
 events: #if omitted then every event fires the build
   git_branch: any
 # ops are unordered logical groupings of functionality that can (eventually) be run locally or remotely
