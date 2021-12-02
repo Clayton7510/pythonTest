@@ -2,7 +2,7 @@
 lang:
   python: 3.8 #the global lang and version
 events: #if omitted then every event fires the build
-  git_branch: none
+  git_branch: any
 # ops are unordered logical groupings of functionality that can (eventually) be run locally or remotely
 ops: #if omitted than a default build is executed based on language
   test:
