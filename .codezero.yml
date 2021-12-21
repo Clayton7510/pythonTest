@@ -12,6 +12,25 @@ ops: #if omitted than a default build is executed based on language
           echo "python3 version: $(python3 --version)"
           echo "pip3 version: $(pip3 --version)"
           echo "python3.9 version: $(python3.9 --version)"
+    - go:
+        path: ''
+        lang:
+        go: 17
+        script: |
+          go version
+    - nodejs:
+        path: ''
+        lang:
+          nodejs: 15
+        script: |
+          node --version
+    - java:
+        path: ''
+        lang:
+          java: 8
+        script: |
+          java -version
+     
 stages:
   - test:
       ops:
