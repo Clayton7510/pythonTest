@@ -27,7 +27,7 @@ ops: #if omitted than a default build is executed based on language
     - go:
         path: ''
         lang:
-        go: 17
+          go: 17
         script: |
           go version
 stages:
