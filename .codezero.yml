@@ -33,5 +33,4 @@ ops: #if omitted than a default build is executed based on language
 stages:
   - test:
       ops:
-        - test.java
-        - test.go
+        - test
