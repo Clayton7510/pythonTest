@@ -2,7 +2,7 @@
 lang:
   python: 3.9 #the global lang and version
 env:
-  - FOO=BAR
+  - CODEZERO_PROVIDER_TOKEN=null
 events: #if omitted then every event fires the build
   git_branch: master
 # ops are unordered logical groupings of functionality that can (eventually) be run locally or remotely
