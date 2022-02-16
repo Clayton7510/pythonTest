@@ -14,8 +14,7 @@ ops: #if omitted than a default build is executed based on language
           echo "python3 version: $(python3 --version)"
           echo "pip3 version: $(pip3 --version)"
           echo "python3.9 version: $(python3.9 --version)"
-          echo $SECRET_TEST
-          env
+          echo $TEST
     - nodejs:
         path: ''
         lang:
