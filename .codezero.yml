@@ -4,7 +4,8 @@ lang:
 secrets:
   - TEST=FAPisMGxayeAxln3Ser50/O1X6P+MgR5cNy0RS9GpX2aet7hrrKb3Su2cR7XvhcOd8cJs5Jhr9X9P9c+kjJY3XxeU5JFS7h30ou9BMDqHOBe8evWY/rjfKK+XgcVJJ+yEgk+rmQ7/Owivih/CLGcv5+64gBZkqtn5dO6LkRHc3yRDpDWo5SUSJoUuCPTeKJpLCYxA7mW3hO6M6Blk3xzDviim44ryQFuoDNMz8sjhpD00cnOnnYFeTanlJiONAbstLhcvhZD4gLV37SxjEc+TBD9DKfeOWNnwaPkcVLutggN1HN2L9AH37U2jLC6HjloGUjTtPiObjAjJqtYLV1Yww==
 events: #if omitted then every event fires the build
-  git_branch: any
+  git_branch: master
+  git_pr: any
 # ops are unordered logical groupings of functionality that can (eventually) be run locally or remotely
 ops: #if omitted than a default build is executed based on language
   test:
